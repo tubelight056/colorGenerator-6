@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color generator 6</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <!-- <span class="material-icons">clipboard</span> -->
+            <textarea class="title material-icons" id="title" value="" onclick="colorgenerator.copys()" placeholder="Color generator" readonly ></textarea>
+        <div class="box-container">
+            <h1 class="label">Red</h1>
+            <input type="range" name="red" onchange="colorgenerator.onchangehandler()"  value="0" class="range red" min="0" max="255" step="1">  
+            <h1 class="redp p">0</h1>
+        </div>
+        <div class="box-container">
+            <h1 class="label">Green</h1>
+            <input type="range"
+             name="green"
+             onchange="colorgenerator.onchangehandler()"
+             value="0" 
+             class="range green" 
+             min="0" 
+             max="255" 
+             step="1">
+            <h1 class="greenp p">0</h1>
+        </div>
+        <div class="box-container">
+            <h1 class="label">Blue</h1>
+            <input type="range" name="blue" onchange="colorgenerator.onchangehandler()"  value="0" class="range blue" min="0" max="255" step="1">
+            <h1 class="bluep p">0</h1>
+        </div>
+        <div class="box-container">
+            <h1 class="label">Alpha</h1>
+            <input type="range" name="alpha" onchange="colorgenerator.onchangehandler()"  class="range alpha" min="1" max="255" step="1">
+            <h1 class="alphap p">1</h1>
+        </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

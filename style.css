@@ -1,0 +1,55 @@
+body{
+    font-family: 'Balsamiq Sans', cursive;
+}
+.body{
+    display: grid;
+    place-items: center;
+    height: 95vh;
+}
+
+.redp,.greenp,.bluep,.alphap{
+    opacity:0;
+}
+.red:hover + .redp{
+    opacity:1;
+}
+.green:hover + .greenp{
+    opacity:1;
+}
+.blue:hover + .bluep{
+    opacity:1;
+}
+.alpha:hover + .alphap{
+    opacity:1;
+}
+
+.title{
+    padding-inline-start:40px;
+    border:none;
+    background-color:transparent;
+    outline-width: 0px;
+    cursor: pointer;
+    width:50vw;
+    font-family: 'Balsamiq Sans', cursive;
+    background:no-repeat url('./content_paste_black_24dp.svg');
+    font-size:1em;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.5);
+    width:60vw;
+    padding: 20px;
+    border-radius: 15px;
+}
+.box-container{
+    display:grid;
+    grid-template-columns: 20% 60% auto;
+    font-size: 0.5rem;   
+}
+.box-container > .p{
+    padding-inline-start: 20px;
+}
+.range{
+    height:2px;
+    margin:20px;
+}
